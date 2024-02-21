@@ -16,6 +16,7 @@
 #navbar li {
     list-style: none;
     padding: 0 20px;
+    position: relative;
      
 }
 #navbar li a{
@@ -30,7 +31,8 @@
 #navbar li a.active {
    color: lightcoral
 }
-#navbar li a.active::after {
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -39,4 +41,9 @@
     bottom: -4px;
     left: 20px;
 
+}
+#hero{
+    background-image:url("C:\Users\Namrata Raj\Downloads\hero4.png");
+    height: 90vh;
+    width: 100%;
 }
